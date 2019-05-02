@@ -5,13 +5,8 @@
 * This program implements the iterative bubbleSort Algorithm with some extra lines of code to improve the efficiency
 * of the software, the primary idea of this improved algorithm is to decrease the size of the array after every pass
 * through the array, the reason this works is because the last element in the array will be sorted after every pass
-* this allows the algorithm to be more efficient by not checking elements in the array that were already sorted. 
-*
-*
-*
+* this allows the algorithm to be more efficient by not checking elements in the array that were already sorted.
 * */
-
-
 
 import java.io.*;
 import java.util.*;
