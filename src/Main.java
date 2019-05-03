@@ -54,19 +54,18 @@ public class Main{
         for (int k = 1; k<= 100; k++)
         {
             int size = 10000;     // change this number to change the size of the random array
-            int[] a = new int[size];
-            int[] temp = new int[a.length];  // empty temporary array, the same size and type as a[]
+            int[] unsortedData = new int[size];
 
             // fill the array with random integers
-            for (int i = 0; i< a.length; i++)
-                a[i] = (int)(Math.random()*100000 +1);
+            for (int i = 0; i< unsortedData.length; i++)
+                unsortedData[i] = (int)(Math.random()*100000 +1);
 
 
             // get the start time in nanoseconds
             long startTime = System.nanoTime();
 
             //call the improved bubbleSort method to sort the entire array
-            bubbleSort(a);
+            bubbleSort(unsortedData);
 
             // get the end time in nanoseconds
             long endTime = System.nanoTime();
